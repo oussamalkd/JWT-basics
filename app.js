@@ -11,7 +11,7 @@ const errorHandlerMiddleware = require("./middleware/error-handler")
 const mainRoutes = require("./routes/main")
 //middleware
     //front-end folder
-//app.use(express.static("./public"))
+app.use(express.static("./public"))
 app.use(express.json())
 
 app.use("/api/v1", mainRoutes)
